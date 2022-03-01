@@ -7,7 +7,7 @@ def makePair(): #Removes one person from the potential pool (number in options) 
 
 def checkResult(): #Counts how many numbers are in their corresponding positions (how many matches are correct)
     beams = 0
-    for c in range(1,12):
+    for c in range(1,couples+1):
         if (c == goals[c-1]):
             beams += 1
     return beams
